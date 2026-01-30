@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us?"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="250dp"
+            android:justificationMode="inter_word"
+            android:text="MyTodoList is here to help you transform daily chaos into achievable small steps. We believe that every great plan begins with a well-organized task list." />
+
+        <TextView
+            android:id="@+id/textViewjuga"
+            android:layout_width="350dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="330dp"
+            android:justificationMode="inter_word"
+            android:text="Personal Planner: Organize your daily tasks with fully customizable icons." />
+
+        <TextView
+            android:id="@+id/textViewjuga1"
+            android:layout_width="350dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="380dp"
+            android:justificationMode="inter_word"
+            android:text="Upcoming Tasks: Stay ahead by monitoring what needs to be done tomorrow." />
+
+        <TextView
+            android:id="@+id/textViewjuga2"
+            android:layout_width="350dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="420dp"
+            android:justificationMode="inter_word"
+            android:text="Notes and etc: Instantly capture your most important ideas or manage anything else on your mind." />
+
+        <TextView
+            android:id="@+id/textViewjuga3"
+            android:layout_width="220dp"
+            android:layout_height="49dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="Visit Developer." />
+
+        <ImageButton
+            android:id="@+id/imageButtonau"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/ig" />
+
+        <ImageButton
+            android:id="@+id/imageButtonau1"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/github" />
+    </FrameLayout>
+</LinearLayout>

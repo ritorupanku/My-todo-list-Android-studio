@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Icon"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3">
+
+        <ImageButton
+            android:id="@+id/icon1"
+            android:layout_width="62dp"
+            android:layout_height="58dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/caliistenic" />
+
+        <ImageButton
+            android:id="@+id/icon2"
+            android:layout_margin="8dp"
+            android:src="@drawable/car" />
+
+        <ImageButton
+            android:id="@+id/icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/job" />
+
+        <ImageButton
+            android:id="@+id/icon4"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/mechanical" />
+
+        <ImageButton
+            android:id="@+id/icon5"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/motrcycle" />
+
+        <ImageButton
+            android:id="@+id/icon6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/reading" />
+
+        <ImageButton
+            android:id="@+id/icon7"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/skate_time" />
+
+        <ImageButton
+            android:id="@+id/icon8"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/stopthebadhabits" />
+
+        <ImageButton
+            android:id="@+id/icon9"
+            android:layout_margin="8dp"
+            android:src="@drawable/workout1" />
+
+        <ImageButton
+            android:id="@+id/icon10"
+            android:layout_margin="8dp"
+            android:src="@drawable/workout2" />
+
+        <ImageButton
+            android:id="@+id/icon11"
+            android:layout_margin="8dp"
+            android:src="@drawable/addimage" />
+    </GridLayout>
+
+
+</LinearLayout>
