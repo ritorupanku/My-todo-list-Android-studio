@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Daftar Tugasku</string>
+
+    <string name="menu_home">Beranda</string>
+    <string name="menu_settings">Pengaturan</string>
+    <string name="menu_exit">Keluar</string>
+    <string name="exit_confirm">Apakah Anda yakin ingin keluar?</string>
+    <string name="settings_title">Pengaturan</string>
+    <string name="lang_text">Bahasa</string>
+    <string name="theme_text">Tema (Mode Gelap)</string>
+    <string name="notif_text">Notifikasi</string>
+    <string name="version_text">Versi Aplikasi</string>
+    <string name="about_dev_text">Tentang Pengembang</string>
+    <string name="about_us_title">Tentang Kami?</string>
+    <string name="about_desc_main">MyTodoList hadir untuk membantu Anda mengubah kekacauan harian menjadi langkah-langkah kecil yang dapat dicapai. Kami percaya bahwa setiap rencana besar dimulai dengan daftar tugas yang terorganisir dengan baik.</string>
+    <string name="about_feature_planner">Perencana Pribadi: Atur tugas harian Anda dengan ikon yang dapat disesuaikan sepenuhnya.</string>
+    <string name="about_feature_upcoming">Tugas Mendatang: Tetap terdepan dengan memantau apa yang perlu dilakukan besok.</string>
+    <string name="about_feature_notes">Catatan dll: Tangkap ide-ide terpenting Anda secara instan atau kelola hal lain dalam pikiran Anda.</string>
+    <string name="about_visit_dev">Kunjungi Pengembang.</string>
+    <string name="add_plan_title">Rencana Baru</string>
+    <string name="hint_task_title">Judul tugas</string>
+    <string name="choose_icon_title">Pilih Ikon</string>
+    <string name="planer_title">Rencana Anda</string>
+    <string name="planer_empty_title">Anda belum menyematkan rencana apa pun!</string>
+    <string name="planer_empty_desc">Klik tombol tambah untuk membuat rencana baru</string>
+    <string name="plans_for">Rencana untuk: %1$s</string>
+    <string name="save_success">Rencana berhasil disimpan!</string>
+    <string name="empty_error">Silakan tulis rencana Anda terlebih dahulu!</string>
+    <string name="home_title">Beranda</string>
+</resources>

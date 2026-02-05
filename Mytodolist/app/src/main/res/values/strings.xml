@@ -1,5 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My todo list</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">My Todo List</string>
+    <string name="settings_title">Settings</string>
+    <string name="lang_text">Language</string>
+    <string name="theme_text">Theme (Dark Mode)</string>
+    <string name="notif_text">Notification</string>
+    <string name="version_text">App Version</string>
+    <string name="about_dev_text">About Developer</string>
+    <string name="about_us_title">About Us?</string>
+    <string name="about_desc_main">MyTodoList is here to help you transform daily chaos into achievable small steps. We believe that every great plan begins with a well-organized task list.</string>
+    <string name="about_feature_planner">Personal Planner: Organize your daily tasks with fully customizable icons.</string>
+    <string name="about_feature_upcoming">Upcoming Tasks: Stay ahead by monitoring what needs to be done tomorrow.</string>
+    <string name="about_feature_notes">Notes and etc: Instantly capture your most important ideas or manage anything else on your mind.</string>
+    <string name="about_visit_dev">Visit Developer.</string>
+    <string name="add_plan_title">New Plan</string>
+    <string name="hint_task_title">Task title</string>
+    <string name="choose_icon_title">Choose Icon</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_exit">Exit</string>
+    <string name="exit_confirm">Are you sure?</string>
+    <string name="planer_title">Your plans</string>
+    <string name="planer_empty_title">You haven\'t pinned your plan yet!</string>
+    <string name="planer_empty_desc">Click add button to make a new plan</string>
+    <string name="plans_for">Plans for: %1$s</string>
+    <string name="save_success">Plan saved successfully!</string>
+    <string name="empty_error">Please write your plan first!</string>
+    <string name="home_title">Home</string>
 </resources>
+

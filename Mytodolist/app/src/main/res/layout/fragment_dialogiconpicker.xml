@@ -1,20 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pilih Icon"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="10dp"/>
+    android:padding="16dp"
+    android:background="#312F2F"> <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/choose_icon_title"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="#FFFFFF"
+    android:layout_marginBottom="10dp"/>
 
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="355dp"
         android:alignmentMode="alignMargins"
         android:columnCount="3">
 
@@ -23,11 +24,15 @@
             android:layout_width="62dp"
             android:layout_height="58dp"
             android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/caliistenic" />
 
         <ImageButton
             android:id="@+id/icon2"
+            android:layout_width="64dp"
+            android:layout_height="62dp"
             android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/car" />
 
         <ImageButton
@@ -35,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/job" />
 
         <ImageButton
@@ -42,6 +48,7 @@
             android:layout_width="61dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/mechanical" />
 
         <ImageButton
@@ -49,6 +56,7 @@
             android:layout_width="66dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/motrcycle" />
 
         <ImageButton
@@ -56,6 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/reading" />
 
         <ImageButton
@@ -63,6 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="68dp"
             android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/skate_time" />
 
         <ImageButton
@@ -70,23 +80,26 @@
             android:layout_width="74dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/stopthebadhabits" />
 
         <ImageButton
             android:id="@+id/icon9"
             android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/workout1" />
 
         <ImageButton
             android:id="@+id/icon10"
             android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/workout2" />
 
         <ImageButton
             android:id="@+id/icon11"
             android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/addimage" />
     </GridLayout>
-
 
 </LinearLayout>

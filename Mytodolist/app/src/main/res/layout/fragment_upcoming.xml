@@ -42,6 +42,19 @@
                 android:backgroundTint="#312f2f"
                 android:unfocusedMonthDateColor="#FBC02D" />
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvUpcoming"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvNoTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak ada rencana untuk tanggal ini"
+                android:layout_gravity="center"
+                android:visibility="gone" />
             <TextView
                 android:id="@+id/tv_selected_date"
                 android:layout_width="wrap_content"

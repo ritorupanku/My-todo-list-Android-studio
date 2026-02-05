@@ -4,88 +4,95 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#312F2F"> <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_us_title"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="About Us?"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/logo" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="100dp"
-            app:srcCompat="@drawable/logo" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:justificationMode="inter_word"
+        android:textColor="#FFFFFF"
+        android:text="@string/about_desc_main" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="350dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="250dp"
-            android:justificationMode="inter_word"
-            android:text="MyTodoList is here to help you transform daily chaos into achievable small steps. We believe that every great plan begins with a well-organized task list." />
+    <TextView
+        android:id="@+id/textViewjuga"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="370dp"
+        android:justificationMode="inter_word"
+        android:textColor="#FFFFFF"
+        android:text="@string/about_feature_planner" />
 
-        <TextView
-            android:id="@+id/textViewjuga"
-            android:layout_width="350dp"
-            android:layout_height="49dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="330dp"
-            android:justificationMode="inter_word"
-            android:text="Personal Planner: Organize your daily tasks with fully customizable icons." />
+    <TextView
+        android:id="@+id/textViewjuga1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="420dp"
+        android:justificationMode="inter_word"
+        android:textColor="#FFFFFF"
+        android:text="@string/about_feature_upcoming" />
 
-        <TextView
-            android:id="@+id/textViewjuga1"
-            android:layout_width="350dp"
-            android:layout_height="49dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="380dp"
-            android:justificationMode="inter_word"
-            android:text="Upcoming Tasks: Stay ahead by monitoring what needs to be done tomorrow." />
+    <TextView
+        android:id="@+id/textViewjuga2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="470dp"
+        android:justificationMode="inter_word"
+        android:textColor="#FFFFFF"
+        android:text="@string/about_feature_notes" />
 
-        <TextView
-            android:id="@+id/textViewjuga2"
-            android:layout_width="350dp"
-            android:layout_height="49dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="420dp"
-            android:justificationMode="inter_word"
-            android:text="Notes and etc: Instantly capture your most important ideas or manage anything else on your mind." />
+    <TextView
+        android:id="@+id/textViewjuga3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/about_visit_dev" />
 
-        <TextView
-            android:id="@+id/textViewjuga3"
-            android:layout_width="220dp"
-            android:layout_height="49dp"
-            android:layout_gravity="bottom|right"
-            android:layout_marginBottom="20dp"
-            android:justificationMode="inter_word"
-            android:text="Visit Developer." />
+    <ImageButton
+        android:id="@+id/imageButtonau"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:srcCompat="@drawable/ig" />
 
-        <ImageButton
-            android:id="@+id/imageButtonau"
-            android:layout_width="50dp"
-            android:layout_height="52dp"
-            android:layout_gravity="bottom|right"
-            android:layout_marginBottom="20dp"
-            app:srcCompat="@drawable/ig" />
-
-        <ImageButton
-            android:id="@+id/imageButtonau1"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:layout_gravity="bottom|right"
-            android:layout_marginRight="50dp"
-            android:layout_marginBottom="20dp"
-            app:srcCompat="@drawable/github" />
-    </FrameLayout>
+    <ImageButton
+        android:id="@+id/imageButtonau1"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:srcCompat="@drawable/github" />
+</FrameLayout>
 </LinearLayout>

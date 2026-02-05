@@ -4,108 +4,115 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#312F2F"> <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <FrameLayout
+    <ImageView
+        android:id="@+id/imagegear"
+        android:layout_width="315dp"
+        android:layout_height="403dp"
+        android:layout_gravity="center"
+        android:alpha="0.1"
+        app:srcCompat="@drawable/gear" />
+
+    <TextView
+        android:id="@+id/textView6"
         android:layout_width="match_parent"
-        android:layout_height="699dp">
+        android:layout_height="69dp"
+        android:text="@string/settings_title"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imagegear"
-            android:layout_width="315dp"
-            android:layout_height="403dp"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/gear" />
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="70dp"
+        android:paddingHorizontal="16dp">
         <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="69dp"
-            android:text="Settings"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:layout_marginTop="70dp"
-            android:paddingHorizontal="16dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:text="Theme (Dark Mode)"
-                android:textSize="18sp" />
-            <com.google.android.material.switchmaterial.SwitchMaterial
-                android:id="@+id/switch_theme"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true" />
-        </RelativeLayout>
-
-        <Button
-            android:id="@+id/buttonbahasa"
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:layout_marginTop="140dp"
-            android:background="#00FFFFFF"
-            android:text="Language"
-            android:gravity="start|center_vertical"
-            android:paddingHorizontal="16dp"
-            android:textAllCaps="false"
-            android:textSize="18sp" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:layout_marginTop="210dp"
-            android:paddingHorizontal="16dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:text="Notification"
-                android:textSize="18sp" />
-            <com.google.android.material.switchmaterial.SwitchMaterial
-                android:id="@+id/switch_notif"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true" />
-        </RelativeLayout>
-
-        <Button
-            android:id="@+id/buttonapkinfo"
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:layout_marginTop="280dp"
-            android:background="#00FFFFFF"
-            android:text="App Version"
-            android:gravity="start|center_vertical"
-            android:paddingHorizontal="16dp"
-            android:textAllCaps="false"
-            android:textSize="18sp" />
-
-        <Button
-            android:id="@+id/buttonaboutdev"
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:layout_marginTop="350dp"
-            android:background="#00FFFFFF"
-            android:text="About Developer"
-            android:gravity="start|center_vertical"
-            android:paddingHorizontal="16dp"
-            android:textAllCaps="false"
-            android:textSize="18sp" />
-
-        <ImageButton
-            android:id="@+id/btn_delete_all"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="420dp"
-            android:background="#00FFFFFF"
-            app:srcCompat="@drawable/svg" />
+            android:layout_centerVertical="true"
+            android:text="@string/theme_text"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
 
-    </FrameLayout>
+    <Button
+        android:id="@+id/buttonbahasa"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="140dp"
+        android:background="#00FFFFFF"
+        android:text="@string/lang_text"
+        android:textColor="#FFFFFF"
+        android:gravity="start|center_vertical"
+        android:paddingHorizontal="16dp"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="210dp"
+        android:paddingHorizontal="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/notif_text"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonapkinfo"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="280dp"
+        android:background="#00FFFFFF"
+        android:text="@string/version_text"
+        android:textColor="#FFFFFF"
+        android:gravity="start|center_vertical"
+        android:paddingHorizontal="16dp"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonaboutdev"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="350dp"
+        android:background="#00FFFFFF"
+        android:text="@string/about_dev_text"
+        android:textColor="#FFFFFF"
+        android:gravity="start|center_vertical"
+        android:paddingHorizontal="16dp"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/btn_delete_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/svg"
+        app:tint="#D32F2F" />
+
+</FrameLayout>
 </LinearLayout>

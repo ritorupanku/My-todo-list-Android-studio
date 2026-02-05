@@ -1,14 +1,15 @@
 package com.example.mytodolist
 
 import android.os.Bundle
+import android.view.Menu
 import android.widget.ImageButton
 import android.widget.PopupMenu
+import androidx.appcompat.app.AlertDialog // Pastikan ini ada agar tidak error
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 
 class MainActivity : AppCompatActivity() {
 
-    // Deklarasi variabel di tingkat Class agar bisa diakses di semua fungsi
     private lateinit var btnPlaner: ImageButton
     private lateinit var btnUpcoming: ImageButton
     private lateinit var btnNotes: ImageButton
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         // 2. TAMPILAN AWAL
         if (savedInstanceState == null) {
-            resetStatusTombol() // Matikan semua dulu
+            resetStatusTombol()
             btnPlaner.isActivated = true
             gantiHalaman(PlanerFragment())
         }
@@ -54,43 +55,47 @@ class MainActivity : AppCompatActivity() {
         btnetc.setOnClickListener {
             val popup = PopupMenu(this, btnetc)
 
-            // Tambahkan ID (1, 2, 3) agar bisa dideteksi saat diklik
-            popup.menu.add(0, 1, 0, "Home")
-            popup.menu.add(0, 2, 1, "Setting")
-            popup.menu.add(0, 3, 2, "About us")
-            popup.menu.add(0, 4, 3, "Exit")
+            popup.menu.add(Menu.NONE, 1, 0, getString(R.string.menu_home))
+            popup.menu.add(Menu.NONE, 2, 1, getString(R.string.menu_settings))
+            popup.menu.add(Menu.NONE, 3, 2, getString(R.string.about_us_title))
+            popup.menu.add(Menu.NONE, 4, 3, getString(R.string.menu_exit))
 
             popup.setOnMenuItemClickListener { item ->
                 when (item.itemId) {
-                    1 -> { // Home
-
-                        gantiHalaman(HomeFragment())
+                    1 -> {
+                        resetStatusTombol()
+                        btnPlaner.isActivated = true
+                        gantiHalaman(PlanerFragment())
                         true
                     }
-                    2 -> { // Setting
-                         gantiHalaman(SettingsFragment())
+                    2 -> {
+                        supportFragmentManager.beginTransaction()
+                            .replace(R.id.container_utama, SettingsFragment())
+                            .addToBackStack(null)
+                            .commit()
                         true
                     }
-                    3 -> { // About us
-                        gantiHalaman(AboutusFragment())
+                    3 -> {
+                        supportFragmentManager.beginTransaction()
+                            .replace(R.id.container_utama, AboutusFragment())
+                            .addToBackStack(null)
+                            .commit()
                         true
                     }
-                    4 -> { // Exit
-                        finish()
+                    4 -> {
+                        AlertDialog.Builder(this)
+                            .setMessage(getString(R.string.exit_confirm))
+                            .setPositiveButton(getString(android.R.string.ok)) { _, _ -> finish() }
+                            .setNegativeButton(getString(android.R.string.cancel), null)
+                            .show()
                         true
                     }
                     else -> false
                 }
             }
-
-            btnetc.isActivated = true
             popup.show()
-
-            popup.setOnDismissListener {
-                btnetc.isActivated = false
-            }
         }
-    } // Akhir onCreate
+    } // <-- INI TUTUP ONCREATE (Tadi kamu lupa atau salah letak di sini)
 
     // FUNGSI UNTUK GANTI HALAMAN
     private fun gantiHalaman(fragment: Fragment) {

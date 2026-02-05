@@ -1,39 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="#312F2F"
+    android:padding="20dp"
+    tools:context=".HomeFragment">
 
-    <FrameLayout
-        android:id="@+id/home"
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:text="@string/home_title"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHome"
         android:layout_width="match_parent"
-        android:layout_height="777dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="306dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Home"
-                android:textSize="24sp" />
-
-        </LinearLayout>
-    </FrameLayout>
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:clipToPadding="false"
+        android:visibility="gone" />
 
     <LinearLayout
+        android:id="@+id/layoutKosongHome"
         android:layout_width="match_parent"
-        android:layout_height="97dp"
-        android:orientation="horizontal"/>
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/nullactivityplanner"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:alpha="0.5"
+            android:src="@drawable/icon_add" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/textViewplanernull1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="You haven't pinned your plan yet"
+            android:textColor="#88FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</FrameLayout>

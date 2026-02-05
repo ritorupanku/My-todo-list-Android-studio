@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:fontFamily="sans-serif-black"
-        android:text="New Plan"
+        android:text="@string/add_plan_title"
         android:textColor="#2979ff"
         android:textSize="34sp" />
 
@@ -38,18 +38,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Task title"
-
-            android:inputType="textMultiLine"
-
-            android:maxLines="3"
-
-            android:scrollbars="vertical"
-
-            android:gravity="top|start"
-
             android:background="@android:color/transparent"
-            android:padding="12dp"/>
+            android:gravity="top|start"
+            android:hint="@string/hint_task_title"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:padding="12dp"
+            android:scrollbars="vertical"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#88FFFFFF" />
 
         <ImageButton
             android:id="@+id/saveButton"
@@ -68,4 +65,3 @@
         android:background="#DDDDDD" />
 
 </LinearLayout>
-

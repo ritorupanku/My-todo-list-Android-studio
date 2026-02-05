@@ -23,7 +23,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your plans"
+                    android:text="@string/planer_title"
                     android:textColor="#FFC107"
                     android:textSize="22sp"
                     android:textStyle="bold" />
@@ -54,18 +54,17 @@
                     android:id="@+id/textViewplanernull1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="You haven't pinned your plan yet!"
+                    android:text="@string/planer_empty_title"
                     android:textAlignment="center"
                     android:textColor="@color/cardview_light_background"
                     android:textSize="18sp"
                     android:textStyle="bold" />
-
                 <TextView
                     android:id="@+id/textViewplanernull2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Click add button to make a new plan"
+                    android:text="@string/planer_empty_desc"
                     android:textAlignment="center"
                     android:textColor="@color/cardview_light_background"
                     android:textSize="14sp" />
