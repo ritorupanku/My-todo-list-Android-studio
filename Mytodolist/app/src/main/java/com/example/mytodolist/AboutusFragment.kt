@@ -30,7 +30,7 @@ class AboutusFragment : Fragment() {
 
         // 4. Pasang fungsi klik untuk Instagram
         btnInstagram?.setOnClickListener {
-            goToUrl("https://www.instagram.com/petantang_petentenggg?igsh=MWJ4NzhlbnBkYWQxbg==")
+            goToUrl("https://www.instagram.com/ritoru.panku?igsh=MWQyeW55dHY5b29hbg==")
         }
 
         return view

@@ -15,6 +15,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#D81B60"
+            android:backgroundTint="#312f2f"
             android:orientation="vertical"
             android:padding="20dp">
 
@@ -22,21 +24,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Upcoming Schedule"
+                android:textColor="#1976D2"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:textColor="#1A237E" />
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="40dp"
                 android:layout_height="4dp"
                 android:layout_marginTop="8dp"
-                android:background="#FFBF00" />
+                android:background="#1976D2" />
 
             <CalendarView
                 android:id="@+id/calendarView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#312f2f"
+                android:unfocusedMonthDateColor="#FBC02D" />
 
             <TextView
                 android:id="@+id/tv_selected_date"
